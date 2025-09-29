@@ -1,8 +1,10 @@
 import itertools
 import multiprocessing
+
 import galois
 import numpy as np
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.FiniteFieldSolve import FiniteFieldSolve
+
+from Program.Quantumer.MokeQuantumComputation.Helper.FiniteFieldSolve import FiniteFieldSolve
 
 upper=None
 lower=None

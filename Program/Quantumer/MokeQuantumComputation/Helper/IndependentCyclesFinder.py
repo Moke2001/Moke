@@ -1,7 +1,7 @@
 import galois
 import numpy as np
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.MajoranaOperator import MajoranaOperator
 
+from Program.Quantumer.MokeQuantumComputation.Operator.MajoranaOperator import MajoranaOperator
 
 #%%  KEY：计算Euler图的圈分解
 """

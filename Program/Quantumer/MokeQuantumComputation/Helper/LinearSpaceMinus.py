@@ -1,7 +1,7 @@
 import galois
 import numpy as np
 
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.LinearSpaceCap import LinearSpaceCap
+from Program.Quantumer.MokeQuantumComputation.Helper.LinearSpaceCap import LinearSpaceCap
 
 
 def LinearSpaceMinus(basis1, basis2):

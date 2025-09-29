@@ -1,9 +1,10 @@
 import itertools
 import multiprocessing
+
 import galois
 import numpy as np
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.FiniteFieldSolve import FiniteFieldSolve
 
+from Program.Quantumer.MokeQuantumComputation.Helper.FiniteFieldSolve import FiniteFieldSolve
 
 upper=2000
 lower=0
@@ -62,6 +63,9 @@ def upper_bound(gauge_group,center_list,lower,upper):
             if FiniteFieldSolve(gauge_group, temp) is None:
                 if upper.value > np.count_nonzero(temp):
                     upper.value = np.count_nonzero(temp)
+                    if upper.value==8:
+                        lower.value=8
+                        return lower.value
                     print('upperbound:', upper.value)
             if lower.value == upper.value:
                 return lower.value

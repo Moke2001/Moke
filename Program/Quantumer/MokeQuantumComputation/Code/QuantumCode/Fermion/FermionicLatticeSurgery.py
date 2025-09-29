@@ -1,11 +1,11 @@
 import copy
 
-import numpy as np
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.FermionicCode import FermionicCode
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.MajoranaOperator import MajoranaOperator
 import networkx as nx
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.IndependentCyclesFinder import IndependentCyclesFinder
+import numpy as np
 
+from Program.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.FermionicCode import FermionicCode
+from Program.Quantumer.MokeQuantumComputation.Helper.IndependentCyclesFinder import IndependentCyclesFinder
+from Program.Quantumer.MokeQuantumComputation.Operator.MajoranaOperator import MajoranaOperator
 
 # %%  USER：生成Fermionic lattice surgery之后的code
 """

@@ -1,15 +1,16 @@
 import copy
 import itertools
+
 import galois
 import numpy as np
 from ldpc import BpOsdDecoder
 
-from ToolBox.Quantumer.MokeQuantumComputation.Code.ClassicalCode.BicycleCode import BicycleCode
-from ToolBox.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.MajoranaOperator import MajoranaOperator
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.FiniteFieldSolve import FiniteFieldSolve
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.Orthogonalize import orthogonalize
-from ToolBox.Quantumer.MokeQuantumComputation.Helper.QuantumCodeDistance import QuantumCodeDistance
+from Program.Quantumer.MokeQuantumComputation.Code.ClassicalCode.BicycleCode import BicycleCode
+from Program.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
+from Program.Quantumer.MokeQuantumComputation.Helper.FiniteFieldSolve import FiniteFieldSolve
+from Program.Quantumer.MokeQuantumComputation.Helper.Orthogonalize import orthogonalize
+from Program.Quantumer.MokeQuantumComputation.Helper.QuantumCodeDistance import QuantumCodeDistance
+from Program.Quantumer.MokeQuantumComputation.Operator.MajoranaOperator import MajoranaOperator
 
 
 class FermionicCode:

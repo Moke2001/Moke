@@ -1,5 +1,5 @@
-import numpy as np
 import galois
+import numpy as np
 
 """
 计算GF(2)上两个向量空间的交集的基矢组

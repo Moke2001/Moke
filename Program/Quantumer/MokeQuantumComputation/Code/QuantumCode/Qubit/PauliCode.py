@@ -1,9 +1,11 @@
 import copy
+
 import galois
 import numpy as np
 from ldpc import BpOsdDecoder
-from ToolBox.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Qubit.PauliOperator import PauliOperator
+
+from Program.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
+from Program.Quantumer.MokeQuantumComputation.Operator.PauliOperator import PauliOperator
 
 
 class PauliCode:

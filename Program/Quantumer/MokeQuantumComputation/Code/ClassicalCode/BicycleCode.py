@@ -1,7 +1,9 @@
-import galois
-from ToolBox.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
-import numpy as np
 import random
+
+import galois
+import numpy as np
+
+from Program.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
 
 
 class BicycleCode(LinearCode):

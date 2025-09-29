@@ -15,15 +15,13 @@ class MajoranaOperator:
     def __init__(self,x_vector,z_vector,coff):
 
         ##  数据标准化
-        x_vector=x_vector.copy()
-        z_vector=z_vector.copy()
-        assert isinstance(x_vector,np.ndarray) or isinstance(x_vector,list)
-        assert isinstance(z_vector,np.ndarray) or isinstance(z_vector,list)
         assert coff==-1 or coff==1
+        assert isinstance(x_vector,list) or isinstance(x_vector,np.ndarray)
+        assert isinstance(z_vector,list) or isinstance(z_vector,np.ndarray)
 
         ##  赋值
-        self.x_vector=np.array(x_vector,dtype=int)
-        self.z_vector=np.array(z_vector,dtype=int)
+        self.x_vector=x_vector.copy()
+        self.z_vector=z_vector.copy()
         self.coff=coff
 
         ##  计算系数虚实
@@ -90,6 +88,7 @@ class MajoranaOperator:
     """
     def mul(self,other,number_qubit):
         assert isinstance(other,MajoranaOperator)
+
         ##  计算相乘结果
         data_0=np.zeros(number_qubit*2,dtype=int)
         data_1=np.zeros(number_qubit*2,dtype=int)
@@ -121,6 +120,20 @@ class MajoranaOperator:
         if self.factor==other.factor==1j:
             new_coff=-new_coff
         return MajoranaOperator(x_vector,z_vector,new_coff)
+
+
+    #%%  USER：计算两个算符相乘的结果
+    """
+    input.other：MajoranaOperator对象，另一个算符
+    input.number_qubit：int对象，总共的qubits数目
+    output：MajoranaOperator对象，相乘的结果
+    """
+    def __mul__(self,other):
+        assert isinstance(other,MajoranaOperator)
+        max_0=np.max([np.max(self.x_vector),np.max(self.z_vector)])
+        max_1=np.max([np.max(other.x_vector),np.max(other.z_vector)])
+        number_qubit=np.max([max_0,max_1])+1
+        return self.mul(other,number_qubit)
 
 
     #%%  USER：复制函数

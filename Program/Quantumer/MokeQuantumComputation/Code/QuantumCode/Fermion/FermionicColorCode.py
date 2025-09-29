@@ -1,5 +1,5 @@
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.FermionicCode import FermionicCode
-from ToolBox.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.MajoranaOperator import MajoranaOperator
+from Program.Quantumer.MokeQuantumComputation.Code.QuantumCode.Fermion.FermionicCode import FermionicCode
+from Program.Quantumer.MokeQuantumComputation.Operator.MajoranaOperator import MajoranaOperator
 
 
 class FermionicColorCode(FermionicCode):

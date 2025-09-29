@@ -1,6 +1,7 @@
 import galois
 import numpy as np
-from ToolBox.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
+
+from Program.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
 
 
 class EuclideanCode(LinearCode):

@@ -1,7 +1,9 @@
-import numpy as np
-import galois
 from itertools import product
-from ToolBox.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
+
+import galois
+import numpy as np
+
+from Program.Quantumer.MokeQuantumComputation.Code.ClassicalCode.LinearCode import LinearCode
 
 
 class ProjectiveCode(LinearCode):
