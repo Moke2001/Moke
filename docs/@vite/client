@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite Client</title>
+</head>
+<body>
+    <!-- 空文件，用于解决404错误 -->
+</body>
+</html>

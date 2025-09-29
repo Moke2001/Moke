@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Studio - 量子计算与量子信息研究</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Quantum Studio</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">首页</a>
+                <a href="publications.html">学术成果</a>
+                <a href="resources.html">资源中心</a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 全屏个人介绍展示区 -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Quantum Studio</h1>
+            <p>清华大学交叉信息研究院 量子物理与量子计算</p>
+            <a href="#about" class="btn-primary smooth-scroll">开启无限可能</a>
+        </div>
+        <div id="particles-container"></div>
+    </section>
+
+    <!-- 个人简介 -->
+    <section id="about" class="vision-section">
+        <div class="container">
+            <div class="vision-content">
+                <h2>个人简介</h2>
+                <p>墨克，清华大学交叉信息研究院博士研究生，从事量子计算与量子信息领域的研究工作。主要研究方向包括量子算法、量子纠错和量子多体物理等前沿领域。致力于推动量子计算理论与应用的发展，为实现量子优势贡献力量。</p>
+                <p><strong>2024年9月至今</strong>清华大学交叉信息研究院 物理学博士研究生</p>
+                <p><strong>2020年9月-2024年6月</strong> 武汉大学物理科学与技术学院 物理学学士</p>
+                <p><strong>2017年9月-2020年7月</strong> 固始县高级中学</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 最新研究成果 -->
+    <section class="research-highlights">
+        <div class="container">
+            <h2>最新研究成果</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="highlight-card">
+                            <div class="highlight-image">
+                                <img src="images/head1.png" alt="量子纠错">
+                            </div>
+                            <div class="highlight-content">
+                                <h3>量子纠错研究</h3>
+                                <p>我们在fermionic quantum computing platforms框架下开发了fermionic computation的整套框架，构造了fermionic LDPC codes与包括fermionic lattice surgery, fermionic teleportation and fermionic memory-processor架构在内的一系列容错计算方案，为fermionic computation服务于高效fermionic systems的求解奠定了基础。</p>
+                                <a href="https://doi.org/10.48550/arXiv.2508.15323" class="btn-secondary">查看论文</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="highlight-card">
+                            <div class="highlight-image">
+                                <img src="images/head2.png" alt="量子编译">
+                            </div>
+                            <div class="highlight-content">
+                                <h3>中性原子平台的量子编译方案</h3>
+                                <p>我们系统性地回顾了基于矩阵分解的量子编译方法，并提出了一种适用于中性原子量子计算的编译算法，该算法能够有效地将任意酉操作分解为适合中性原子平台的一系列量子门，并确保生成的量子电路可以直接在该平台上运行。</p>
+                                <a href="https://doi.org/10.48550/arXiv.2501.05266" class="btn-secondary">查看论文</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="highlight-card">
+                            <div class="highlight-image">
+                                <img src="images/head3.png" alt="量子多体物理研究">
+                            </div>
+                            <div class="highlight-content">
+                                <h3>模拟冷却中的退火方案</h3>
+                                <p>我们比较了在随机参数生成的测试集上，有退火过程和无退火过程的冷却协议的整体性能。结果表明，带有退火过程的冷却协议既能实现精度又能提高效率。我们的结果还显示，冷却协议对噪声的抵抗能力取决于量子噪声的类型。</p>
+                                <a href="https://doi.org/10.48550/arXiv.2501.05268" class="btn-secondary">查看论文</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research" class="research-directions">
+        <div class="container">
+            <h2>研究方向</h2>
+            <div class="direction-grid">
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                        <h3>量子算法</h3>
+                    <p>我们研究量子近似优化算法、量子绝热算法等算法的应用，并尝试开发新的量子算法。</p>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                        <h3>量子纠错与容错</h3>
+                    <p>我们致力于开发新型量子纠错编码方案，研究量子错误的检测与校正技术，提高量子信息的存储稳定性和计算可靠性。</p>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                        <h3>量子多体物理</h3>
+                    <p>我们研究量子多体系统的物理性质，尤其是开放量子系统。聚焦于多体局域化、量子疤痕态和量子混沌等新奇量子现象。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>电话：+86 130-3373-6868</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>邮箱：Moke2001@whu.edu.cn</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>地址：北京市海淀区清华大学蒙民伟科技楼S219</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>谷歌学术：<a href="https://scholar.google.com/citations?user=xRZXHUAAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar主页</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub：<a href="https://github.com/Moke2001" target="_blank">github.com/Moke2001</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-twitter"></i>
+                        <p>Twitter：<a href="https://x.com/moke2001_whu/status/1879742247228641664" target="_blank">@moke2001_whu</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <p>微信：xumoke20011106</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <img src="images/map.png" alt="办公地址地图" class="map-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Quantum Studio</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="publications.html">学术成果</a>
+                    <a href="resources.html">资源中心</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Quantum Studio - 墨克版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/particles.js"></script>
+    
+    <!-- 轮播功能 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel');
+            const track = document.querySelector('.carousel-track');
+            const items = document.querySelectorAll('.carousel-item');
+            const nextButton = document.querySelector('.carousel-next');
+            const prevButton = document.querySelector('.carousel-prev');
+            const indicators = document.querySelector('.carousel-indicators');
+            
+            let currentIndex = 0;
+            const itemWidth = 100; // 百分比
+            
+            // 创建指示器
+            items.forEach((_, index) => {
+                const button = document.createElement('button');
+                button.classList.add('indicator');
+                button.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+                indicators.appendChild(button);
+            });
+            
+            const indicatorButtons = indicators.querySelectorAll('button');
+            
+            // 更新轮播
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * itemWidth}%)`;
+                
+                // 更新指示器
+                indicatorButtons.forEach((button, index) => {
+                    if (index === currentIndex) {
+                        button.classList.add('active');
+                    } else {
+                        button.classList.remove('active');
+                    }
+                });
+            }
+            
+            // 下一张
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+            
+            // 上一张
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+            
+            // 初始化
+            updateCarousel();
+        });
+    </script>
+    
+    <!-- 平滑滚动效果 -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

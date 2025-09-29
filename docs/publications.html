@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术成果</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Quantum Studio</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="publications.html" class="active">学术成果</a>
+                <a href="resources.html">资源中心</a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 style="color: white;">学术成果</h1>
+            <p style="color: white;">我的研究论文、专利和软件著作权</p>
+        </div>
+    </section>
+
+    <!-- 学术成果内容 -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <!-- 论文筛选 -->
+            <div class="publications-filter">
+                <div class="filter-group">
+                    <label for="year-filter">按年份筛选：</label>
+                    <select id="year-filter">
+                        <option value="all">全部年份</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="field-filter">按研究方向筛选：</label>
+                    <select id="field-filter">
+                        <option value="all">全部方向</option>
+                        <option value="algorithm">量子算法</option>
+                        <option value="error-correction">量子纠错</option>
+                        <option value="many-body">量子多体物理</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- 论文列表 -->
+            <div class="publications-list">
+                <div class="publication-item" data-year="2025" data-field="error-correction">
+                    <div class="publication-info">
+                        <h4>Fermion-to-Fermion Low-Density Parity-Check Codes</h4>
+                        <p class="publication-authors">C.Y. Xu, Z.C. Liu, Y. Xu</p>
+                        <p class="publication-venue">ArXiv, 2025</p>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="https://arxiv.org/pdf/2508.15323" class="btn-download" title="下载PDF"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="publication-item" data-year="2025" data-field="algorithm">
+                    <div class="publication-info">
+                        <h4>Research on Quantum Compilation of Neutral Atom Quantum Computing Platform</h4>
+                        <p class="publication-authors">C.Y. Xu</p>
+                        <p class="publication-venue">ArXiv, 2025</p>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="https://arxiv.org/pdf/2501.05266" class="btn-download" title="下载PDF"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="publication-item" data-year="2025" data-field="many-body">
+                    <div class="publication-info">
+                        <h4>The Application of Annealing in Quantum Cooling Protocols</h4>
+                        <p class="publication-authors">C.Y. Xu</p>
+                        <p class="publication-venue">ArXiv, 2025</p>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="https://arxiv.org/pdf/2501.05268" class="btn-download" title="下载PDF"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="publication-item" data-year="2025" data-field="many-body">
+                    <div class="publication-info">
+                        <h4>Measurement of Surface Tension Coefficients of Liquids Based on Equal Thickness Interference</h4>
+                        <p class="publication-authors">Z.Y. Xu, C.Y. Xu, L.W. Tong, K.Y. Chen, Z.W. Dong</p>
+                        <p class="publication-venue">ArXiv, 2025</p>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="https://arxiv.org/pdf/2501.05257" class="btn-download" title="下载PDF"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Quantum Studio</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="publications.html">学术成果</a>
+                    <a href="resources.html">资源中心</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Quantum Studio - 墨克版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+    <script>
+        // 解析URL参数
+        function getURLParameter(name) {
+            name = name.replace(/[[]/, '\\[').replace(/[]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // 页面加载后根据URL参数筛选论文
+        document.addEventListener('DOMContentLoaded', function() {
+            var direction = getURLParameter('direction');
+            var fieldFilter = document.getElementById('field-filter');
+            
+            if (direction && fieldFilter) {
+                // 映射研究方向参数到筛选选项值
+                var directionMap = {
+                    'quantum_optimization': 'algorithm',
+                    'quantum_error_correction': 'error-correction',
+                    'quantum_machine_learning': 'machine-learning',
+                    'quantum_hardware': 'many-body'
+                };
+                
+                var fieldValue = directionMap[direction] || 'all';
+                fieldFilter.value = fieldValue;
+                
+                // 触发筛选事件
+                if (typeof filterPublications === 'function') {
+                    filterPublications();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
